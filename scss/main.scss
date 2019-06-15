@@ -107,7 +107,9 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $secondary-color 3px solid;
+    // border-top: $secondary-color 3px solid;
+    border-top: 3px solid white;
   }
 }
 
@@ -169,12 +171,14 @@ main {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
+  @include easeOut;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
+  @include easeOut;
 }
 
 #main-footer {
